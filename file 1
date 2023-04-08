@@ -1,0 +1,19 @@
+fruits=[]
+while True:
+    choice=int(input('''
+    press 1 to add
+    press 2 to remove 
+    press 3 to display the list: '''))
+    if choice == 1:
+        i=input('enter the item: ')
+        fruits.append(i)
+        print(fruits)
+    elif choice==2:
+        i=input('enter name: ')
+        i.upper()
+        fruits.remove(i)
+        print(fruits)
+    elif choice==3:
+        print(fruits)
+    else:
+        print('please select from 1-3')
